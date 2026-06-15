@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>GitHub Profile Finder</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style6.css">
+
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <h1>
+            <i class="fa-brands fa-github"></i>
+            GitHub Finder
+        </h1>
+
+        <!-- Search Box -->
+        <div class="search-box">
+
+            <input
+            type="text"
+            id="username"
+            placeholder="Enter GitHub username"
+            />
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+        <!-- Loading -->
+        <div id="loading" class="hidden">
+            Loading...
+        </div>
+
+        <!-- Error -->
+        <div id="error" class="hidden"></div>
+
+        <!-- Profile Card -->
+        <div id="profile" class="profile-card hidden">
+
+            <img id="avatar" src="" alt="Avatar">
+
+            <h2 id="name"></h2>
+
+            <p id="bio"></p>
+
+            <!-- Stats -->
+            <div class="stats">
+
+                <div>
+                    <h3 id="followers"></h3>
+                    <p>Followers</p>
+                </div>
+
+                <div>
+                    <h3 id="following"></h3>
+                    <p>Following</p>
+                </div>
+
+                <div>
+                    <h3 id="repos"></h3>
+                    <p>Repos</p>
+                </div>
+
+            </div>
+
+            <!-- Button -->
+            <a id="profileLink" target="_blank">
+                Visit Profile
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
